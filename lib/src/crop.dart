@@ -301,6 +301,7 @@ class CropState extends State<Crop> with TickerProviderStateMixin, Drag {
         _image = image;
         _scale = imageInfo.scale;
         // adjust _ration type by width
+        // Modifications Copyright [2022.7.7] [exe]
         _ratio = min(
           boundaries.width / image.width,
           boundaries.height / image.height,
